@@ -31,7 +31,8 @@ Flutter package pageable_page_view is developed to facilitate pagination operati
 
 -listTileOnTap: Function that will be called when ListTile is tapped.
 
-![pageable.gif](..%2F..%2FDesktop%2Fpageable.gif)
+![pageable](https://github.com/iremtasci/pageable_page_view/assets/65269472/26de8f04-549d-48ea-9239-95f7075cd40f)
+
 
 ## Getting started
 
