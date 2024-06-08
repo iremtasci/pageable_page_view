@@ -1,39 +1,90 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+pageable_page_view
+Flutter package pageable_page_view is developed to facilitate pagination operations in Flutter applications.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+-list: List of items to paginate.
+
+-itemPerPage: Number of items per page.
+
+-initialPage: Index of the page to show initially.
+
+-child: Widget that contains another Widget.
+
+-shrinkWrap: Whether the ListView should shrink-wrap its content.
+
+-scrollDirection: The scrolling direction of the ListView.
+
+-physics: The physics of the ListView.
+
+-titleDisplay: Function that returns the text to display for the title.
+
+-subTitleDisplay: Function that returns the text to display for the subtitle.
+
+-itemDisplay: Function that returns the text to display for the item.
+
+-extraAlan: Extra field.
+
+-prefixIcon: Leading icon.
+
+-suffixIcon: Trailing icon.
+
+-listTileOnTap: Function that will be called when ListTile is tapped.
+
+![pageable.gif](..%2F..%2FDesktop%2Fpageable.gif)
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+import 'package:pageable_page_view/pageable_page_view.dart';
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+import 'package:pageable_page_view/pageable_page_view.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  final List<dynamic> itemList = [
+    // List items will be defined here.
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Pageable Page View Example'),
+        ),
+        body: Column(
+          children: [
+            Expanded(
+              child: PageablePageView<dynamic>(
+                list: itemList,
+                itemPerPage: 10,
+                initialPage: 0,
+                titleDisplay: (item) => item.title,
+                subTitleDisplay: (item) => item.subtitle,
+                itemDisplay: (item) => item.displayText,
+                prefixIcon: Icon(Icons.arrow_back),
+                suffixIcon: Icon(Icons.arrow_forward),
+                listTileOnTap: () {
+                  // Function to be called when ListTile is tapped.
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
 ```
 
 ## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+If you have any questions or feedback, please feel free to contact us. Enjoy using it!
+Contact
+Email: iremtasci0629@gmail.com
