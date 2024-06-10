@@ -1,6 +1,6 @@
 name: pageable_page_view
 description: "Pageable Page View is a project developed to facilitate pagination operations in Flutter."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/iremtasci/pageable_page_view.git
 author: İrem TAŞCI<iremtasci0629@gmail.com>
 
