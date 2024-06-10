@@ -17,7 +17,7 @@
 - **suffixIcon**: Trailing icon.
 - **listTileOnTap**: Function that will be called when ListTile is tapped.
 
-![pageable](https://github.com/iremtasci/pageable_page_view/blob/main/assets/pageable_page_view.png)
+![pageable](https://github.com/iremtasci/pageable_page_view/assets/65269472/8765f0cb-1f96-4a09-8430-6aeb0f331f28)
 
 ## Getting Started
 
