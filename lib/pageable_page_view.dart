@@ -15,8 +15,8 @@ class PageablePageView<T> extends StatefulWidget {
   final ScrollPhysics physics;
   final String Function(dynamic) titleDisplay;
   final String Function(dynamic) subTitleDisplay;
-  final String Function(dynamic) itemDisplay;
-  final String extraAlan;
+  //final String Function(dynamic) itemDisplay;
+  //final String extraAlan;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
   final VoidCallback? listTileOnTap;
@@ -31,10 +31,10 @@ class PageablePageView<T> extends StatefulWidget {
       this.shrinkWrap = true,
       this.scrollDirection = Axis.vertical,
       this.physics = const AlwaysScrollableScrollPhysics(),
-      required this.itemDisplay,
+      //required this.itemDisplay,
       required this.titleDisplay,
       required this.subTitleDisplay,
-      this.extraAlan = "",
+      //this.extraAlan = "",
       this.prefixIcon,
       this.suffixIcon,
       this.listTileOnTap})

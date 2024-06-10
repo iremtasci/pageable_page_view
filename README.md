@@ -1,43 +1,39 @@
-pageable_page_view
-Flutter package pageable_page_view is developed to facilitate pagination operations in Flutter applications.
+# pageable_page_view
+
+`pageable_page_view` is a Flutter package developed to facilitate pagination operations in Flutter applications. This package provides a customizable and efficient way to paginate lists of data, enhancing the user experience with smooth scrolling and flexible options.
 
 ## Features
 
--list: List of items to paginate.
+- **list**: List of items to paginate.
+- **itemPerPage**: Number of items per page.
+- **initialPage**: Index of the page to show initially.
+- **child**: Widget that contains another Widget.
+- **shrinkWrap**: Whether the ListView should shrink-wrap its content.
+- **scrollDirection**: The scrolling direction of the ListView.
+- **physics**: The physics of the ListView.
+- **titleDisplay**: Function that returns the text to display for the title.
+- **subTitleDisplay**: Function that returns the text to display for the subtitle.
+- **prefixIcon**: Leading icon.
+- **suffixIcon**: Trailing icon.
+- **listTileOnTap**: Function that will be called when ListTile is tapped.
 
--itemPerPage: Number of items per page.
+![pageable](https://github.com/iremtasci/pageable_page_view/blob/main/assets/pageable_page_view.png)
 
--initialPage: Index of the page to show initially.
+## Getting Started
 
--child: Widget that contains another Widget.
+### Installation
 
--shrinkWrap: Whether the ListView should shrink-wrap its content.
+Add the following line to your `pubspec.yaml` file to include the package in your project:
 
--scrollDirection: The scrolling direction of the ListView.
-
--physics: The physics of the ListView.
-
--titleDisplay: Function that returns the text to display for the title.
-
--subTitleDisplay: Function that returns the text to display for the subtitle.
-
--itemDisplay: Function that returns the text to display for the item.
-
--extraAlan: Extra field.
-
--prefixIcon: Leading icon.
-
--suffixIcon: Trailing icon.
-
--listTileOnTap: Function that will be called when ListTile is tapped.
-
-![pageable](https://github.com/iremtasci/pageable_page_view/assets/65269472/26de8f04-549d-48ea-9239-95f7075cd40f)
-
-
+```yaml
+dependencies:
+  pageable_page_view: ^latest_version
+``` 
 ## Getting started
 
+```dart
 import 'package:pageable_page_view/pageable_page_view.dart';
-
+```
 ## Usage
 
 ```dart

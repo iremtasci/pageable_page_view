@@ -50,7 +50,6 @@ class _MyHomePageState extends State<MyHomePage> {
       body: PageablePageView(
         titleDisplay: (item) => item.color.toString(),
         subTitleDisplay: (item) => item.size.toString(),
-        itemDisplay: (item) => 'Renk: ${item}, Boyut: ${item}',
         list: itemList,
         itemPerPage: 2,
         listTileOnTap: listOntp,
